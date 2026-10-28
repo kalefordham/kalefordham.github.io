@@ -16,12 +16,12 @@ html {
 }
 
 body {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    line-height: 1.65;
+    font-family: Helvetica, Arial, sans-serif;
     margin: 0;
-    background: var(--background);
-    color: var(--text);
-    font-size: 15px;
+    padding: 0;
+    color: black;
+    background-color: rgb(235, 249, 252);
+    font-size: 11px;
 }
 
 .site-layout {
@@ -30,58 +30,12 @@ body {
 }
 
 .sidebar {
-    background: var(--surface);
     border-right: 1px solid var(--line);
     flex: 0 0 var(--sidebar-width);
     padding: 32px 24px;
     position: fixed;
     min-height: 100vh;
-}
-
-.site-name {
-    color: var(--text);
-    display: block;
-    font-size: 18px;
-    font-weight: 600;
-    letter-spacing: -0.02em;
     text-decoration: none;
-}
-
-.site-role,
-.eyebrow,
-.contact-label {
-    color: var(--muted);
-    font-size: 11px;
-    letter-spacing: 0.08em;
-    margin: 6px 0 0;
-    text-transform: uppercase;
-}
-
-.sidebar-contact {
-    border-top: 1px solid var(--line);
-    display: flex;
-    flex-direction: column;
-    font-size: 12px;
-    gap: 4px;
-    margin-top: 64px;
-    padding-top: 18px;
-}
-
-.content a:hover,
-.content a:focus {
-    color: var(--text);
-}
-
-.contact-label {
-    margin: 0 0 2px;
-}
-
-.sidebar-contact a,
-.sidebar-contact p {
-    color: var(--muted);
-    display: block;
-    margin: 0;
-    overflow-wrap: anywhere;
 }
 
 .content {
@@ -91,28 +45,17 @@ body {
     width: 100%;
 }
 
-.page-header {
-    border-bottom: 1px solid var(--line);
-    padding-bottom: 48px;
+.bio {
+    font-size: 12px;
 }
 
-.page-header h1 {
-    font-size: clamp(30px, 5vw, 52px);
-    font-weight: 500;
-    letter-spacing: -0.04em;
-    line-height: 1.08;
-    margin: 18px 0 28px;
-    max-width: 650px;
-}
-
-.page-header p:not(.eyebrow) {
-    color: #4f4f4a;
-    max-width: 680px;
-}
-
-.content a {
-    color: var(--text);
+a {
+    color: black;
     text-decoration: none;
+}
+
+a[href]:hover {
+    text-decoration: underline;
 }
 
 @media (max-width: 700px) {
